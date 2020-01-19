@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<ToolFxmlLoaderConfiguration title="javaFxTools"
+		menuId="plugInTools" isMenu="true" />
+	<ToolFxmlLoaderConfiguration>
+		<url>/fxml/LinuxPathToWindowsPath.fxml</url>
+		<resourceBundleName></resourceBundleName>
+		<className></className>
+		<title>LinuxPathToWindowsPath</title>
+		<iconPath>/images/plugInIcon.jpg</iconPath>
+		<isDefaultShow></isDefaultShow>
+		<menuId></menuId>
+		<menuParentId>plugInTools</menuParentId>
+		<controllerType>Node</controllerType>
+	</ToolFxmlLoaderConfiguration>
+</root>
