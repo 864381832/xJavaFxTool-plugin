@@ -1,7 +1,5 @@
 package com.xwintop.xJavaFxPlugIn;
 
-import com.xwintop.xJavaFxTool.utils.Config;
-import com.xwintop.xJavaFxTool.utils.XJavaFxSystemUtil;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -27,13 +25,12 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        XJavaFxSystemUtil.initSystemLocal();
         FXMLLoader fXMLLoader = getFXMLLoader();
         ResourceBundle resourceBundle = fXMLLoader.getResources();
         Parent root = fXMLLoader.load();
         primaryStage.setResizable(true);
         primaryStage.setTitle(resourceBundle.getString("Title"));
-        primaryStage.getIcons().add(new Image("/images/icon.jpg"));
+//        primaryStage.getIcons().add(new Image("/images/icon.jpg"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
         primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
@@ -45,7 +42,7 @@ public class Main extends Application {
     }
 
     public static FXMLLoader getFXMLLoader() {
-        ResourceBundle resourceBundle = ResourceBundle.getBundle("locale.ScanPortTool", Config.defaultLocale);
+        ResourceBundle resourceBundle = ResourceBundle.getBundle("locale.ScanPortTool");
         URL url = Object.class.getResource("/fxml/ScanPortTool.fxml");
         FXMLLoader fXMLLoader = new FXMLLoader(url, resourceBundle);
         return fXMLLoader;
