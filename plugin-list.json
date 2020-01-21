@@ -6,5 +6,13 @@
     "version": "0.0.1",
     "versionNumber": 1,
     "downloadUrl": "https://xwintop.gitee.io/xjavafxtool-plugin/plugin-libs/x-ZookeeperTool-0.0.1.jar"
+  },
+  {
+    "name": "端口扫描工具",
+    "synopsis": "扫描一些常用端口和自定义端口",
+    "jarName": "x-ScanPortTool",
+    "version": "0.0.1",
+    "versionNumber": 1,
+    "downloadUrl": "https://xwintop.gitee.io/xjavafxtool-plugin/plugin-libs/x-ScanPortTool-0.0.1.jar"
   }
 ]

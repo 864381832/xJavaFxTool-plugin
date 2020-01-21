@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<ToolFxmlLoaderConfiguration title="javaFxTools" menuId="plugInTools" isMenu="true" />
+	<ToolFxmlLoaderConfiguration title="debugTools" menuId="p-debugTools" menuParentId="moreToolsMenu" isMenu="true" />
 	<ToolFxmlLoaderConfiguration>
 		<url>/fxml/ScanPortTool.fxml</url>
 		<resourceBundleName>locale.ScanPortTool</resourceBundleName>
@@ -9,7 +9,7 @@
 		<iconPath>/images/plugInIcon.jpg</iconPath>
 		<isDefaultShow></isDefaultShow>
 		<menuId></menuId>
-		<menuParentId>plugInTools</menuParentId>
+		<menuParentId>p-debugTools</menuParentId>
 		<controllerType>Node</controllerType>
 	</ToolFxmlLoaderConfiguration>
 </root>
