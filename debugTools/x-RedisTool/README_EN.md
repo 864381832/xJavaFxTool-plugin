@@ -1,1 +1,1 @@
-SwitchHostsTool
+RedisTool
