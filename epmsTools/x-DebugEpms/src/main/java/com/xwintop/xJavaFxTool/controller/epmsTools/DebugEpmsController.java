@@ -4,11 +4,11 @@ import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import com.xwintop.xcore.util.ConfigureUtil;
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.apache.commons.io.FileUtils;
 
-import com.xwintop.xJavaFxTool.utils.ConfigureUtil;
 import com.xwintop.xcore.util.javafx.FileChooserUtil;
 
 import javafx.event.ActionEvent;
