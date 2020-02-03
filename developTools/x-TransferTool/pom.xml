@@ -131,6 +131,11 @@
 			<artifactId>spring-kafka</artifactId>
 			<version>2.2.4.RELEASE</version>
 		</dependency>
+		<!--        <dependency>-->
+		<!--            <groupId>org.apache.kafka</groupId>-->
+		<!--            <artifactId>kafka-clients</artifactId>-->
+		<!--            <version>2.2.0</version>-->
+		<!--        </dependency>-->
 
 		<!--groovy脚本语言支持-->
 		<dependency>
