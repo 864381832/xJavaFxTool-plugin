@@ -446,5 +446,21 @@
     "version": "0.0.1",
     "versionNumber": 1,
     "downloadUrl": "https://xwintop.gitee.io/xjavafxtool-plugin/plugin-libs/assistTools/x-WechatJumpGameTool-0.0.1.jar"
+  },
+  {
+    "name": "javaFxFxml转换代码",
+    "synopsis": "",
+    "jarName": "x-JavaFxXmlToObjectCode",
+    "version": "0.0.1",
+    "versionNumber": 1,
+    "downloadUrl": "https://xwintop.gitee.io/xjavafxtool-plugin/plugin-libs/javaFxTools/x-JavaFxXmlToObjectCode-0.0.1.jar"
+  },
+  {
+    "name": "显示系统信息",
+    "synopsis": "",
+    "jarName": "x-ShowSystemInfo",
+    "version": "0.0.1",
+    "versionNumber": 1,
+    "downloadUrl": "https://xwintop.gitee.io/xjavafxtool-plugin/plugin-libs/javaFxTools/x-ShowSystemInfo-0.0.1.jar"
   }
 ]

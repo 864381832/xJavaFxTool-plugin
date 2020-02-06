@@ -48,6 +48,13 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<!-- oshi获取系统信息工具 -->
+		<dependency>
+			<groupId>com.github.oshi</groupId>
+			<artifactId>oshi-core</artifactId>
+			<version>3.9.1</version>
+		</dependency>
+
 	</dependencies>
 	
 	<build>
