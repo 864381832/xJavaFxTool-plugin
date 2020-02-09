@@ -462,5 +462,21 @@
     "version": "0.0.1",
     "versionNumber": 1,
     "downloadUrl": "https://xwintop.gitee.io/xjavafxtool-plugin/plugin-libs/javaFxTools/x-ShowSystemInfo-0.0.1.jar"
+  },
+  {
+    "name": "Cron表达式生成器Html版",
+    "synopsis": "",
+    "jarName": "x-WebCronExpBuilder",
+    "version": "0.0.1",
+    "versionNumber": 1,
+    "downloadUrl": "https://xwintop.gitee.io/xjavafxtool-plugin/plugin-libs/netWorkTools/x-WebCronExpBuilder-0.0.1.jar"
+  },
+  {
+    "name": "json编辑工具Html版",
+    "synopsis": "",
+    "jarName": "x-WebJsonEditor",
+    "version": "0.0.1",
+    "versionNumber": 1,
+    "downloadUrl": "https://xwintop.gitee.io/xjavafxtool-plugin/plugin-libs/netWorkTools/x-WebJsonEditor-0.0.1.jar"
   }
 ]

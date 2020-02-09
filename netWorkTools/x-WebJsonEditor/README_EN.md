@@ -1,1 +1,1 @@
-jsonEditor
+jsonEditorHtml
