@@ -1,5 +1,6 @@
 package com.xwintop.xJavaFxTool.services.littleTools;
 
+import cn.hutool.core.thread.ThreadUtil;
 import com.xwintop.xJavaFxTool.controller.littleTools.FileSearchToolController;
 import com.xwintop.xcore.util.ConfigureUtil;
 import com.xwintop.xcore.util.javafx.TooltipUtil;
@@ -15,7 +16,6 @@ import org.apache.lucene.search.*;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.store.NoLockFactory;
-import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,7 +24,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
-import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * @ClassName: FileSearchToolService
@@ -39,7 +38,6 @@ import java.util.concurrent.ThreadPoolExecutor;
 public class FileSearchToolService {
     private FileSearchToolController fileSearchToolController;
     private static Timer autoRefreshIndexTimer = null;
-    private static ThreadPoolTaskExecutor refreshIndexPoolTaskExecutor;
     private static final String searchIndexDir = ConfigureUtil.getConfigurePath("searchIndexDir/");
 
     private static Directory directory;
@@ -63,13 +61,6 @@ public class FileSearchToolService {
         } catch (Exception e) {
             log.error("创建文件失败！", e);
         }
-        refreshIndexPoolTaskExecutor = new ThreadPoolTaskExecutor();
-        refreshIndexPoolTaskExecutor.setCorePoolSize(5);
-        refreshIndexPoolTaskExecutor.setMaxPoolSize(20);
-        refreshIndexPoolTaskExecutor.setQueueCapacity(30);
-        // 设置拒绝策略
-        refreshIndexPoolTaskExecutor.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());
-        refreshIndexPoolTaskExecutor.initialize();
     }
 
     public static void getIndexWriter(Directory directory) throws IOException {
@@ -221,7 +212,7 @@ public class FileSearchToolService {
     }
 
     public void addSearchIndexFile(Path path) {
-        refreshIndexPoolTaskExecutor.execute(() -> {
+        ThreadUtil.execAsync(() -> {
             try {
                 DirectoryStream<Path> stream = Files.newDirectoryStream(path);
                 Iterator<Path> pathIterator = stream.iterator();
