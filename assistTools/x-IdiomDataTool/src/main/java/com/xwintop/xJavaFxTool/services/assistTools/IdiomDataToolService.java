@@ -48,7 +48,8 @@ public class IdiomDataToolService {
             if (!idiomDirtyFile.exists()) {
                 idiomDirtyFile.getParentFile().mkdirs();
                 AlertUtil.showInfoAlert("第一次使用，需下载成语字典数据，请稍后...");
-                Request request = new Request.Builder().url("https://xwintop.gitee.io/xjavafxtool/file/IdiomDirty.mv.db").build();
+//                Request request = new Request.Builder().url("https://xwintop.gitee.io/xjavafxtool/file/IdiomDirty.mv.db").build();
+                Request request = new Request.Builder().url("https://xwintop.gitee.io/xjavafxtool-plugin/assistTools/x-IdiomDataTool/file/IdiomDirty.mv.db").build();
                 Response response = new OkHttpClient().newCall(request).execute();
                 if (!response.isSuccessful()) {
                     TooltipUtil.showToast("下载异常，请重试...");
