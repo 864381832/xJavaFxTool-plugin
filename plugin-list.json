@@ -353,7 +353,7 @@
   },
   {
     "name": "编码转换工具",
-    "synopsis": "编码转换工具",
+    "synopsis": "",
     "jarName": "x-CharsetDetectTool",
     "version": "0.0.1",
     "versionNumber": 1,
@@ -377,15 +377,15 @@
   },
   {
     "name": "文件编码转换工具",
-    "synopsis": "文件编码转换工具",
+    "synopsis": "",
     "jarName": "x-FileUnicodeTransformationTool",
     "version": "0.0.1",
     "versionNumber": 1,
     "downloadUrl": "https://xwintop.gitee.io/xjavafxtool-plugin/plugin-libs/codeTools/x-FileUnicodeTransformationTool-0.0.1.jar"
   },
   {
-    "name": "成语字典工具",
-    "synopsis": "成语字典工具",
+    "name": "身份证生成工具",
+    "synopsis": "",
     "jarName": "x-IdCardGenerator",
     "version": "0.0.1",
     "versionNumber": 1,
@@ -393,7 +393,7 @@
   },
   {
     "name": "随机数生成工具",
-    "synopsis": "随机数生成工具",
+    "synopsis": "",
     "jarName": "x-RandomGeneratorTool",
     "version": "0.0.1",
     "versionNumber": 1,
@@ -401,7 +401,7 @@
   },
   {
     "name": "正则表达式生成工具",
-    "synopsis": "正则表达式生成工具",
+    "synopsis": "",
     "jarName": "x-RegexTester",
     "version": "0.0.1",
     "versionNumber": 1,
