@@ -1,8 +1,8 @@
 package com.xwintop.xJavaFxTool.controller.debugTools.redisTool;
 
 import com.xwintop.xJavaFxTool.services.debugTools.redisTool.RedisToolDataViewService;
+import com.xwintop.xJavaFxTool.utils.RedisUtil;
 import com.xwintop.xJavaFxTool.view.debugTools.redisTool.RedisToolDataViewView;
-import com.xwintop.xcore.util.RedisUtil;
 import com.xwintop.xcore.util.javafx.AlertUtil;
 
 import com.xwintop.xcore.util.javafx.JavaFxViewUtil;
@@ -96,7 +96,7 @@ public class RedisToolDataViewController extends RedisToolDataViewView {
 				valueListCancelButton.setDisable(false);
 			}
 		});
-		
+
 		valueMapTableData.addListener(new ListChangeListener<Map<String, String>>() {
 			@Override
 			public void onChanged(Change<? extends Map<String, String>> c) {

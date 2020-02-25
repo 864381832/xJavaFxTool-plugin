@@ -1,6 +1,6 @@
 package com.xwintop.xJavaFxTool.services.debugTools;
 
-import com.google.gson.Gson;
+import cn.hutool.json.JSONUtil;
 import com.xwintop.xJavaFxTool.controller.debugTools.ActiveMqToolController;
 import com.xwintop.xJavaFxTool.job.ActiveMqToolJob;
 import com.xwintop.xJavaFxTool.manager.ScheduleManager;
@@ -165,8 +165,7 @@ public class ActiveMqToolService {
             ((BytesMessage) message).writeBytes(messageText.getBytes());
         } else if (messageTypeStrings[3].equals(messageType)) {
             message = session.createMapMessage();
-            @SuppressWarnings("unchecked")
-            Map<String, Object> map = new Gson().fromJson(messageText, Map.class);
+            Map<String, Object> map = JSONUtil.toBean(messageText, Map.class);
             final MapMessage mapMessage = (MapMessage) message;
             map.forEach((String key, Object value) -> {
                 try {

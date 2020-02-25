@@ -2,8 +2,8 @@ package com.xwintop.xJavaFxTool.controller.debugTools.redisTool;
 
 import com.xwintop.xJavaFxTool.model.RedisToolDataTableBean;
 import com.xwintop.xJavaFxTool.services.debugTools.redisTool.RedisToolDataTableService;
+import com.xwintop.xJavaFxTool.utils.RedisUtil;
 import com.xwintop.xJavaFxTool.view.debugTools.redisTool.RedisToolDataTableView;
-import com.xwintop.xcore.util.RedisUtil;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;

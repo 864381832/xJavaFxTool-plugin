@@ -1,6 +1,6 @@
 package com.xwintop.xJavaFxTool.utils;
 
-import com.google.gson.Gson;
+import cn.hutool.json.JSONUtil;
 import org.jaudiotagger.audio.AudioFile;
 import org.jaudiotagger.audio.AudioFileIO;
 import org.jaudiotagger.audio.flac.metadatablock.MetadataBlockDataPicture;
@@ -174,7 +174,7 @@ public class NcmDump {
                 byte[] dedata = aes128EcbDecrypt(data, MODIFY_KEY);
                 // escape `music:`
                 String json = new String(dedata, 6, dedata.length - 6).trim();
-                return new Gson().fromJson(json, ID3Data.class);
+                return JSONUtil.toBean(json, ID3Data.class);
             } catch (Exception e) {
                 e.printStackTrace();
             }

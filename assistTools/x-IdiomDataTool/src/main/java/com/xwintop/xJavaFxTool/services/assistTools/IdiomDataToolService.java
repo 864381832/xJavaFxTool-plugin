@@ -1,6 +1,5 @@
 package com.xwintop.xJavaFxTool.services.assistTools;
 
-import com.alibaba.druid.pool.DruidDataSource;
 import com.xwintop.xJavaFxTool.controller.assistTools.IdiomDataToolController;
 import com.xwintop.xcore.util.ConfigureUtil;
 import com.xwintop.xcore.util.javafx.AlertUtil;
@@ -13,6 +12,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.h2.jdbcx.JdbcDataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.io.File;
@@ -59,11 +59,13 @@ public class IdiomDataToolService {
                 TooltipUtil.showToast("成语字典数据下载完成！");
             }
             if (jdbcTemplate == null) {
-                DruidDataSource dataSource = new DruidDataSource();
+//                DruidDataSource dataSource = new DruidDataSource();
+                JdbcDataSource dataSource = new JdbcDataSource();
                 dataSource.setUrl("jdbc:h2:" + ConfigureUtil.getConfigurePath("file/IdiomDirty"));
-                dataSource.setDriverClassName("org.h2.Driver");
-                dataSource.setTestWhileIdle(false);
-                dataSource.init();
+//                dataSource.setDriverClassName("org.h2.Driver");
+//                dataSource.setTestWhileIdle(false);
+//                dataSource.init();
+                dataSource.getConnection();
                 jdbcTemplate = new JdbcTemplate(dataSource);
             }
         } catch (Exception e) {

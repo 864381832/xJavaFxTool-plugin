@@ -2,7 +2,7 @@ package com.xwintop.xJavaFxTool.services.debugTools.redisTool;
 
 import com.xwintop.xJavaFxTool.controller.debugTools.redisTool.RedisToolController;
 import com.xwintop.xJavaFxTool.controller.debugTools.redisTool.RedisToolDataTableController;
-import com.xwintop.xcore.util.RedisUtil;
+import com.xwintop.xJavaFxTool.utils.RedisUtil;
 import com.xwintop.xcore.util.javafx.TooltipUtil;
 import javafx.event.Event;
 import javafx.event.EventHandler;

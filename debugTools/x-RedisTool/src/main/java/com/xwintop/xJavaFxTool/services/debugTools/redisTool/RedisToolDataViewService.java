@@ -8,8 +8,8 @@ import java.util.Map;
 import java.util.Set;
 
 import com.xwintop.xJavaFxTool.controller.debugTools.redisTool.RedisToolDataViewController;
-import com.xwintop.xcore.util.RedisUtil;
 
+import com.xwintop.xJavaFxTool.utils.RedisUtil;
 import javafx.collections.ObservableList;
 import javafx.scene.layout.VBox;
 import lombok.Getter;
@@ -100,7 +100,7 @@ public class RedisToolDataViewService {
 			setSet();
 		}
 	}
-	
+
 	public void setMapData() {
 		if ("hash".equals(type)) {
 			setHash();
@@ -165,7 +165,7 @@ public class RedisToolDataViewService {
 		}
 		redisToolDataViewController.getRedisUtil().updateList(redisToolDataViewController.getRedisKey(), listValueList);
 	}
-	
+
 	public void reloadSet() {
 		redisToolDataViewController.getValueListTableData().clear();
 		Set<String> listValue = redisToolDataViewController.getRedisUtil()
@@ -176,7 +176,7 @@ public class RedisToolDataViewService {
 			redisToolDataViewController.getValueListTableData().add(map);
 		}
 	}
-	
+
 	public void setSet() {
 		ObservableList<Map<String, String>> valueListTableData = redisToolDataViewController.getValueListTableData();
 		Set<String> listValueList = new HashSet<String>();
@@ -185,9 +185,9 @@ public class RedisToolDataViewService {
 		}
 		redisToolDataViewController.getRedisUtil().updateSet(redisToolDataViewController.getRedisKey(),listValueList);
 	}
-	
-	/** 
-	 * @Title: reloadZset 
+
+	/**
+	 * @Title: reloadZset
 	 * @Description: 重新加载Sorted Set
 	 * @return: void
 	 */
@@ -202,7 +202,7 @@ public class RedisToolDataViewService {
 			redisToolDataViewController.getValueMapTableData().add(mapData);
 		});
 	}
-	
+
 	public void setZSet() {
 		ObservableList<Map<String, String>> valueMapTableData = redisToolDataViewController.getValueMapTableData();
 		Map<String, Double> valueMap = new HashMap<String, Double>();

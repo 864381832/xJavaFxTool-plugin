@@ -7,8 +7,8 @@ import com.xwintop.xJavaFxTool.controller.developTools.JsonConvertToolController
 import com.xwintop.xJavaFxTool.services.developTools.JsonConvertToolServiceUtil.ArrayProcessor;
 import com.xwintop.xJavaFxTool.services.developTools.JsonConvertToolServiceUtil.PropertyTree;
 import com.xwintop.xJavaFxTool.services.developTools.JsonConvertToolServiceUtil.TreeBuilder;
+import com.xwintop.xJavaFxTool.utils.XML2BeanUtils;
 import com.xwintop.xcore.util.StrUtil;
-import com.xwintop.xcore.util.XML2BeanUtils;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;

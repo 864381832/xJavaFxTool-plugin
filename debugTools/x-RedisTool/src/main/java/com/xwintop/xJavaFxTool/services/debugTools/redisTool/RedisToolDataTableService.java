@@ -4,7 +4,7 @@ import com.xwintop.xJavaFxTool.controller.debugTools.redisTool.RedisToolDataTabl
 import com.xwintop.xJavaFxTool.controller.debugTools.redisTool.RedisToolDataViewController;
 import com.xwintop.xJavaFxTool.controller.debugTools.redisTool.RedisToolDialogController;
 import com.xwintop.xJavaFxTool.model.RedisToolDataTableBean;
-import com.xwintop.xcore.util.RedisUtil;
+import com.xwintop.xJavaFxTool.utils.RedisUtil;
 import com.xwintop.xcore.util.javafx.AlertUtil;
 import javafx.event.Event;
 import javafx.event.EventHandler;

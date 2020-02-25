@@ -79,7 +79,7 @@ public class LinuxPathToWindowsPathController implements Initializable {
             FileUtils.forceMkdir(new File(folderPath));
             textFieldWindowsPath.setText(folderPath);
         } catch (Exception e) {
-            AlertUtil.showWarnAlert("转换异常，请检查路径。");
+            AlertUtil.showInfoAlert("转换异常，请检查路径。");
         }
     }
 

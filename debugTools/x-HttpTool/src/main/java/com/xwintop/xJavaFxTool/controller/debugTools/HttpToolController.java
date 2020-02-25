@@ -7,9 +7,7 @@ import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonParser;
+import cn.hutool.json.JSONUtil;
 import com.xwintop.xJavaFxTool.services.debugTools.HttpToolService;
 import com.xwintop.xJavaFxTool.view.debugTools.HttpToolView;
 import com.xwintop.xcore.util.javafx.JavaFxViewUtil;
@@ -104,8 +102,7 @@ public class HttpToolController extends HttpToolView {
 		MenuItem formatJsonMenuItem = new MenuItem("格式化JSON");
 		formatJsonMenuItem.setOnAction(event -> {
 			try {
-				Gson gson = new GsonBuilder().setPrettyPrinting().serializeNulls().create();
-				String prettyJsonString = gson.toJson(new JsonParser().parse(ResponseBodyTextArea.getText()));
+				String prettyJsonString = JSONUtil.formatJsonStr(ResponseBodyTextArea.getText());
 				ResponseBodyTextArea.setText("null".equals(prettyJsonString) ? "" : prettyJsonString);
 			} catch (Exception e) {
 				log.debug("格式化错误:" + e.getMessage());
@@ -146,7 +143,7 @@ public class HttpToolController extends HttpToolView {
 	private void toBrowerAction(ActionEvent event) {
 		httpToolService.toBrowerAction();
 	}
-	
+
 	/**
 	 * @Title: setTableViewOnMouseClicked
 	 * @Description: 设置表格右击事件
