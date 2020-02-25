@@ -67,3 +67,67 @@ xJavaFxTool-plugin是使用javaFx开发的实用小工具集[xJavaFxTool](https:
 55. FileCompressTool:文件解压缩工具（目前支持ar、zip、tar、jar、cpio、7z、gz、bzip2、xz、lzma、pack200、deflate、snappy-framed、lz4-block、lz4-framed、zstd等格式解压缩）
 56. IdiomDataTool:成语字典工具(使用[h2](http://www.h2database.com)数据库存储数据字典)
 57. Sudoku:数独游戏
+
+#### 项目结构
+
+```
+xJavaFxTool
+├─ images	项目截图
+├─ pom.xml	maven配置文件
+├─ README.md	说明文件
+├─ src
+│  ├─ main
+│  │  ├─ java
+│  │  │  └─ com
+│  │  │   └─ xwintop
+│  │  │    └─ xJavaFxTool
+│  │  │     ├─ common	第三方工具类
+│  │  │     ├─ config	springBoot配置类
+│  │  │     ├─ controller	javafx控制层
+│  │  │     │  ├─ assistTools   辅助工具控制层
+│  │  │     │  ├─ codeTools	Code工具控制层
+│  │  │     │  ├─ debugTools	调试工具控制层
+│  │  │     │  ├─ developTools	开发工具控制层
+│  │  │     │  ├─ epmsTools	epms工具控制层
+│  │  │     │  ├─ javaFxTools	javaFx工具控制层
+│  │  │     │  ├─ littleTools	小工具控制层
+│  │  │     │  └─ webTools	html工具控制层
+│  │  │     ├─ job	定时任务处理job
+│  │  │     ├─ main	主函数包
+│  │  │     ├─ manager	管理层
+│  │  │     ├─ model	基础bean类层
+│  │  │     ├─ services	工具服务层
+│  │  │     │  ├─ assistTools   辅助工具服务层
+│  │  │     │  ├─ codeTools	Code工具服务层
+│  │  │     │  ├─ debugTools	调试工具服务层
+│  │  │     │  ├─ developTools	开发工具服务层
+│  │  │     │  ├─ epmsTools	epms工具服务层
+│  │  │     │  ├─ javaFxTools	javaFx工具服务层
+│  │  │     │  ├─ littleTools	小工具服务层
+│  │  │     │  └─ webTools	html工具服务层
+│  │  │     ├─ utils	系统工具类
+│  │  │     ├─ view	javafx视图层
+│  │  │     │  ├─ assistTools   辅助工具视图层
+│  │  │     │  ├─ codeTools	Code工具视图层
+│  │  │     │  ├─ debugTools	调试工具视图层
+│  │  │     │  ├─ developTools	开发工具视图层
+│  │  │     │  ├─ javaFxTools	javaFx工具视图层
+│  │  │     │  ├─ littleTools	小工具视图层
+│  │  │     │  └─ webTools	html工具视图层
+│  │  │     └─ web	web控制视图层
+│  │  └─ resources
+│  │   ├─ com
+│  │   │  └─ xwintop
+│  │   │   └─ xJavaFxTool
+│  │   │    └─ fxmlView     .fxml文件
+│  │   ├─ config	配置文件
+│  │   │  └─ toolFxmlLoaderConfiguration.xml	系统菜单加载配置文件
+│  │   ├─ css	样式资源
+│  │   ├─ images	图片资源
+│  │   ├─ locale	国际化
+│  │   ├─ banner.txt	启动banner图片
+│  │   └─ logback.xml	logback日志配置文件
+│  └─ test  测试类
+│   ├─ java
+│   └─ resources
+```

@@ -44,7 +44,7 @@
 		<dependency>
 			<groupId>com.xwintop</groupId>
 			<artifactId>xcore</artifactId>
-			<version>0.0.2-SNAPSHOT</version>
+			<version>0.0.3-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -68,7 +68,7 @@
 		</dependency>
 
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>

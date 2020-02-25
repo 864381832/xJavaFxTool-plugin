@@ -67,3 +67,72 @@ XJavaFxTool - plugin was developed by using the deployment headaches and practic
 55. FileCompressTool: File decompression tool (currently supports ar, zip, tar, jar, cpio, 7z, gz, bzip2, xz, lzma, pack200, deflate, snappy-framed, lz4-block, lz4-framed, ZSTD, etc.)
 56. IdiomDataTool:IdiomDataTool(Use the [h2](http://www.h2database.com) database to store the data dictionary)
 57. Sudoku:Sudoku Game
+
+```
+xJavaFxTool
+├─ project ImagesRF Royalty Free Screenshot
+├─ external storage jar package lib reference
+├─ libs plugin jar package store
+├─ pom.xml maven profile
+├─ README.md documentation
+├─ src
+│ ├─ main
+│ │ ├─ the Java
+│ │ │ └ com
+│ │ │  └ ─ xwintop
+│ │ │   └ ─ ─ xJavaFxTool
+│ │ │   ├─ common third-party tools
+│ │ │   ├─ config springBoot configuration class
+│ │ │   ├─ controller javafx control layer
+│ │ │   │ ├─ assistTools Auxiliary Tool Control Layer
+│ │ │   │ ├ ─ codeTools Code Tool Control Layer
+│ │ │   │ ├─ debugTools Debug Tool Control Layer
+│ │ │   │ ├─ developTools Development Tool Control Layer
+│ │ │   │ ├─ epmsTools epms Tool Control Layer
+│ │ │   │ ├─ javaFxTools javaFx tool control layer
+│ │ │   │ ├─ littleTools gadget control layer
+│ │ │   │ └ ─ webTools html tool control layer
+│ │ │   ├─ job timed task processing job
+│ │ │   ├─ main main function package
+│ │ │   ├─ manager management
+│ │ │   ├─ model basic bean class layer
+│ │ │   ├─ services tool service layer
+│ │ │   │ ├─ assistTools auxiliary tool service layer
+│ │ │   │ ├─ codeTools Code tool service layer
+│ │ │   │ ├─ debugTools debugging tool service layer
+│ │ │   │ ├─ developTools development tool service layer
+│ │ │   │ ├─ epmsTools epms tool service layer
+│ │ │   │ ├─ javaFxTools javaFx tool service layer
+│ │ │   │ ├─ littleTools gadgets service layer
+│ │ │   │ └─ webTools html tool service layer
+│ │ │   ├─ Utils system tools class
+│ │ │   ├─ view javafx view layer
+│ │ │   │ ├─ assistTools auxiliary tool view layer
+│ │ │   │ ├─ codeTools Code tool view layer
+│ │ │   │ ├─ debugTools debugging tool View layer
+│ │ │   │ ├─ developTools development tools view layer
+│ │ │   │ ├─ javaFxTools javaFx tool view layer
+│ │ │   │ ├─ littleTools widget view layer
+│ │ │   │ └─ webTools html tool view layer
+│ │ │   └ ─ web web control view layer
+│ │ └ ─ resources
+│ │     ├ com
+│ │     │ └ ─ xwintop
+│ │     │  └─ xJavaFxTool
+│ │     │   └─ fxmlView .fxml file
+│ │     ├─ Config configuration file
+│ │     │ └─ toolFxmlLoaderConfiguration.xml system menu loading configuration file
+│ │     ├─ css style resource
+│ │     ├─ data data resource
+│ │     ├─ images image resource
+│ │     ├─ locale internationalization
+│ │     ├─ web html tools
+│ │     ├─ application.yaml SpringBoot configuration file
+│ │     ├─ banner.txt start banner pictures
+│ │     └─ logback.xml logback log configuration file
+│ └─ test test class
+│   ├─ java
+│   └─ resources
+├─ xJavaFxTool.jar run the package directly
+
+```
